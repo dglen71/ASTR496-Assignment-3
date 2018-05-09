@@ -8,8 +8,6 @@ import sympy
 import scipy.integrate as sint
 import sys
 
-print(sys.argv)
-
 
 def k1_function(T):
     T_eV = T / 11605.0
@@ -516,13 +514,6 @@ def evolve(p0 = 2.04001229e-26,f_H = 1e-6, f_He = 0.0, final_t = 1e10, integrato
     #plt.show()
 
 
-
-
-#evolve(element_case=2, f_H = 0.5, f_He = 0.0, safety_factor=1000000, T0 = 10**4)
-
-
-#def evolve(p0 = 2.04001229e-26,f_H = 1e-6, f_He = 0.0, final_t = 1e10, integrator_type = "lsoda", 
-           #safety_factor = 1000, element_case = 1, T0 = 1000):
 
 element_cases = [1,2]
 fHs = [0.0, 1e-6, 1.0]
